@@ -2,40 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sreya | UI/UX</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sreya | UI UX Designer</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<nav>
-  <h1>Sreya</h1>
-  <ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Projects</li>
-  </ul>
-</nav>
+<div class="bg"></div>
 
-<section class="hero">
-  <div class="hero-content">
-    <h2>UI/UX Designer</h2>
-    <h1>Sreya K N</h1>
-    <p>Designing clean, aesthetic & user-friendly experiences</p>
-    <button>View Work</button>
+<header class="glass nav">
+  <h2>SREYA</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero glass">
+  <h1>UI/UX Designer</h1>
+  <p>Designing clean, user-friendly and aesthetic digital experiences</p>
+</section>
+
+<section id="about" class="glass card">
+  <h2>About Me</h2>
+  <p>
+    I'm a UI/UX designer fresher passionate about creating visually appealing and user-friendly designs.
+    Skilled in Figma, Photoshop, and Illustrator, I focus on modern UI trends like glassmorphism and minimal design.
+  </p>
+</section>
+
+<section id="skills" class="glass card">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div>
+      <h3>Tools</h3>
+      <ul>
+        <li>Figma</li>
+        <li>Photoshop</li>
+        <li>Illustrator</li>
+        <li>After Effects</li>
+        <li>HTML & CSS</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>UI/UX</h3>
+      <ul>
+        <li>Wireframing</li>
+        <li>Prototyping</li>
+        <li>User Flow</li>
+        <li>Mobile App Design</li>
+        <li>Visual Design</li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<section class="about fade">
-  <h2>About</h2>
-  <p>UI/UX designer passionate about modern and clean design.</p>
-</section>
-
-<section class="projects fade">
+<section id="projects" class="glass card">
   <h2>Projects</h2>
-  <div class="card">Tailor Booking App</div>
-  <div class="card">UI Practice Designs</div>
+
+  <div class="project">
+    <h3>Tailor Booking App</h3>
+    <p>Mobile app to find nearby tailors with filters and map interface.</p>
+  </div>
+
+  <div class="project">
+    <h3>UI Practice Designs</h3>
+    <p>Modern UI screens including search, filters, and card layouts.</p>
+  </div>
+
 </section>
 
-<script src="script.js"></script>
+<section id="contact" class="glass card">
+  <h2>Contact</h2>
+  <p>Email: knsreya@gmail.com</p>
+  <p>Phone: 8592865297</p>
+</section>
+
+<footer>
+  <p>© 2026 Sreya K N</p>
+</footer>
+
 </body>
 </html>
