@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,35 +10,49 @@
 body {
   background: linear-gradient(135deg, #0F2747, #213B55);
   color: white;
+  overflow-x: hidden;
 }
 
-/* HEADER */
-header {
-  text-align: center;
-  padding: 20px;
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
 /* HERO */
 .hero {
-  height: 90vh;
+  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.hero-text {
+.hero-content {
   text-align: center;
   animation: fadeUp 1s ease;
 }
 
+.hero h1 {
+  font-size: 50px;
+}
+
 button {
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 12px 25px;
+  border-radius: 30px;
   border: none;
+  cursor: pointer;
   background: white;
   color: black;
-  cursor: pointer;
-  border-radius: 20px;
   transition: 0.3s;
 }
 
@@ -46,39 +62,39 @@ button:hover {
 
 /* SECTIONS */
 section {
-  padding: 60px;
+  padding: 100px 50px;
   text-align: center;
 }
 
-/* GLASS EFFECT */
-.card, .project-card {
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  margin: 10px;
+/* GLASS */
+.glass, .project {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
   border-radius: 15px;
+  padding: 20px;
+  margin: 15px;
   transition: 0.3s;
 }
 
-.card:hover, .project-card:hover {
+.glass:hover, .project:hover {
   transform: translateY(-10px);
 }
 
-/* SKILLS GRID */
-.cards {
+/* GRID */
+.skill-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-/* ANIMATIONS */
-.fade-in {
+/* ANIMATION */
+.fade {
   opacity: 0;
   transform: translateY(50px);
   transition: 1s;
 }
 
-.fade-in.show {
+.fade.show {
   opacity: 1;
   transform: translateY(0);
 }
