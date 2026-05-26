@@ -1,47 +1,88 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #0F2747;
-    color: white;
+:root {
+    --bg: #f6f1eb;            /* Ivory background */
+    --card-bg: #ffffff;
+    --text: #1a1a1a;
+    --brand: #bc0000;
+    --border: #e5ddd5;
+    --radius: 16px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Layout container */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+/* Header */
 header {
     text-align: center;
-    padding: 40px;
-    background: #213B55;
 }
 
 h1 {
-    margin: 0;
+    color: var(--brand);
+    font-size: 28px;
 }
 
-section {
-    padding: 40px;
+.subtitle {
+    color: #666;
+    margin-top: 5px;
 }
 
-.skills ul {
+/* Sections */
+h2 {
+    margin-bottom: 15px;
+    color: var(--brand);
+}
+
+/* Tags (skills) */
+.tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    list-style: none;
-    padding: 0;
 }
 
-.skills li {
-    background: #213B55;
-    padding: 10px 15px;
-    border-radius: 20px;
+.tags span {
+    background: rgba(188, 0, 0, 0.1);
+    color: var(--brand);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 14px;
 }
 
-.project-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
+/* Cards */
+.card {
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    transition: 0.3s ease;
 }
 
+.card:hover {
+    border-color: var(--brand);
+    transform: translateY(-3px);
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #213B55;
+    color: #777;
 }
