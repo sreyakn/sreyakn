@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0F2747;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background: #213B55;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 40px;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #213B55;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #213B55;
+}
